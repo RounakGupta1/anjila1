@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: glow 2s infinite alternate;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 600px;
+    animation: fadeIn 3s ease-in;
+  }
+  
+  .cake {
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .layer {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    background: #f76c6c;
+    border: 2px solid #fff;
+  }
+  
+  .layer.top {
+    top: 0;
+    background: #ffb6c1;
+  }
+  
+  .layer.middle {
+    top: 50px;
+    background: #ff9999;
+  }
+  
+  .layer.bottom {
+    top: 100px;
+    background: #ff6666;
+  }
+  
+  .candle {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    top: -50px;
+    left: 95px;
+    background: #fff;
+    border-radius: 5px;
+    animation: flicker 0.8s infinite;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6f61, #ffcccb);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #ffcccb, #ff6f61);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Add unique animations for buttons */
+  button:active {
+    transform: scale(1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0
+    }
+  }
